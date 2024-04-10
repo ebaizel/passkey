@@ -59,7 +59,7 @@ function getCredentials(rp) {
 
   navigator.credentials
     .get({ publicKey: requestCredentialOptions })
-    .then((credentialInfoAssertion) => {
+    .then(async (credentialInfoAssertion) => {
       console.log("credentialInfoAssertion is ", credentialInfoAssertion);
       const blob = new Blob([credentialInfoAssertion.rawId], {type: 'text/plain; charset=utf-8'});
       let rawId = await blob.text();
