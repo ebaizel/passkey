@@ -25,6 +25,7 @@ function createCredentials() {
   navigator.credentials
     .create({ publicKey: createCredentialOptions })
     .then((newCredentialInfo) => {
+      console.log("newCredentialInfo.rawId is ", newCredentialInfo.rawId);
       const response = newCredentialInfo.response;
       const clientExtensionsResults =
         newCredentialInfo.getClientExtensionResults();
@@ -84,6 +85,7 @@ function createCredentialsRandomRP() {
   navigator.credentials
     .create({ publicKey: createCredentialOptions })
     .then((newCredentialInfo) => {
+      console.log("newCredentialInfo.rawId is ", newCredentialInfo.rawId);
       const response = newCredentialInfo.response;
       const clientExtensionsResults =
         newCredentialInfo.getClientExtensionResults();
