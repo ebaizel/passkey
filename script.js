@@ -23,7 +23,7 @@ function createCredentials() {
 };
 
 navigator.credentials
-  .create({ createCredentialOptions })
+  .create({ publicKey: createCredentialOptions })
   .then((newCredentialInfo) => {
     const response = newCredentialInfo.response;
     const clientExtensionsResults =
