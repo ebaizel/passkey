@@ -1,6 +1,6 @@
 // Pass in the relying party 'rp'
 function createCredentials(rp) {
-  alert("Creating credentials v12");
+  alert("Creating credentials v13");
   const userId = new Uint8Array(2);
   uint8[0] = 42;
   const createCredentialOptions = {
