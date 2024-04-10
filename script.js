@@ -45,11 +45,11 @@ function createCredentials(rp) {
 function getCredentials(rp) {
   console.log("Getting credentials");
   const requestCredentialOptions = {
-    allowCredentials: {
+    allowCredentials: [{
       id: userId,
       type: "public-key",
       transports: "internal"
-    },
+    }],
     rpId: rp === undefined ? null : rp.id,
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
