@@ -51,7 +51,7 @@ function getCredentials(rp) {
     // user: {
     //   userId
     // },
-    rp,
+    rp: rp ? rp.id || null,
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
       0x79, 0x50, 0x68, 0x71, 0xda, 0xee, 0xee, 0xb9, 0x94, 0xc3, 0xc2, 0x15,
@@ -167,6 +167,20 @@ document
   });
 document
   .getElementById("getCredentialsRandomRPButton")
+  .addEventListener("click", function () {
+    getCredentials({
+      name: "Example CORP",
+    })
+  });
+document
+  .getElementById("createCredentialsShadyRPButton")
+  .addEventListener("click", function () {
+    createCredentials({
+      name: "Example CORP",
+    })
+  });
+document
+  .getElementById("getCredentialsShadyRPButton")
   .addEventListener("click", function () {
     getCredentials({
       name: "Example CORP",
