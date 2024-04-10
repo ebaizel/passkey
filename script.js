@@ -58,5 +58,6 @@ navigator.credentials
 }
 
 // Add event listener to button
-document.getElementById('executeButton').addEventListener('click', executeJavaScript);
+document.getElementById('createCredentialsButton').addEventListener('click', createCredentials);
+document.getElementById('getCredentialsButton').addEventListener('click', getCredentials);
 
