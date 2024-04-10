@@ -39,6 +39,10 @@ function createCredentials() {
 function getCredentials() {
   console.log("getting credentials");
   const requestCredentialOptions = {
+    rp: {
+      name: "Example CORP",
+      id: "ebaizel.github.io",
+    },
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
       0x79, 0x50, 0x68, 0x71, 0xda, 0xee, 0xee, 0xb9, 0x94, 0xc3, 0xc2, 0x15,
@@ -67,7 +71,6 @@ function createCredentialsRandomRP() {
     ]),
     rp: {
       name: "Example CORP",
-      id: "ebaizel.github.io",
     },
     user: {
       id: new Uint8Array(16),
@@ -99,6 +102,9 @@ function createCredentialsRandomRP() {
 function getCredentialsRandomRP() {
   console.log("getting credentials");
   const requestCredentialOptions = {
+    rp: {
+      name: "Example CORP",
+    },
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
       0x79, 0x50, 0x68, 0x71, 0xda, 0xee, 0xee, 0xb9, 0x94, 0xc3, 0xc2, 0x15,
