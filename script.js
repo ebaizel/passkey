@@ -7,7 +7,7 @@ function createCredentials() {
   ]),
   rp: {
     name: "Example CORP",
-    id: "login.example.com",
+    id: "ebaizel.github.io",
   },
   user: {
     id: new Uint8Array(16),
