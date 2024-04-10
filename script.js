@@ -48,7 +48,7 @@ function getCredentials(rp) {
     allowCredentials: {
       id: userId
     },
-    rpId: rp != null ? rp.id || null,
+    rpId: rp === undefined ? null : rp.id,
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
       0x79, 0x50, 0x68, 0x71, 0xda, 0xee, 0xee, 0xb9, 0x94, 0xc3, 0xc2, 0x15,
