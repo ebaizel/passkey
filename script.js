@@ -14,7 +14,7 @@ function createCredentials(rp) {
     rp,
     user: {
       // id: new Uint8Array(16),
-      id: userId
+      id: userId,
       name: "canand@example.com",
       displayName: "Carina Anand",
     },
