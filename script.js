@@ -46,9 +46,9 @@ function getCredentials(rp) {
   console.log("Getting credentials with rp ", rp);
   const requestCredentialOptions = {
     allowCredentials: [{
-      id: userId,
-      type: "public-key",
-      transports: ["internal"]
+      // id: userId,
+      type: "public-key"
+      // transports: ["internal"]
     }],
     rpId: rp === undefined ? null : rp.id,
     challenge: new Uint8Array([
