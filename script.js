@@ -21,6 +21,10 @@ function createCredentials(rp) {
         alg: -7,
       },
     ],
+    authenticatorSelection: {
+      userVerification: 'required',
+      authenticatorAttachment: 'platform',
+    },
   };
 
   navigator.credentials
