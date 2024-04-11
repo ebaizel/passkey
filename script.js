@@ -84,7 +84,7 @@ document
   .addEventListener("click", function () {
     createCredentials({
       name: "Example CORP",
-      // id: "ebaizel.github.io",
+      id: "ebaizel.github.io",
     })
   });
 document
@@ -100,6 +100,7 @@ document
   .addEventListener("click", function () {
     createCredentials({
       name: "Example CORP",
+      id: "shady.domain.co"
     })
   });
 document
@@ -107,19 +108,20 @@ document
   .addEventListener("click", function () {
     getCredentials({
       name: "Example CORP",
+      id: "shady.domain.co"
     })
   });
-document
-  .getElementById("createCredentialsShadyRPButton")
-  .addEventListener("click", function () {
-    createCredentials({
-      name: "Example CORP",
-    })
-  });
-document
-  .getElementById("getCredentialsShadyRPButton")
-  .addEventListener("click", function () {
-    getCredentials({
-      name: "Example CORP",
-    })
-  });
+// document
+//   .getElementById("createCredentialsShadyRPButton")
+//   .addEventListener("click", function () {
+//     createCredentials({
+//       name: "Example CORP",
+//     })
+//   });
+// document
+//   .getElementById("getCredentialsShadyRPButton")
+//   .addEventListener("click", function () {
+//     getCredentials({
+//       name: "Example CORP",
+//     })
+//   });
