@@ -48,7 +48,7 @@ function getCredentials(rp) {
     allowCredentials: [{
       id: userId,
       type: "public-key"
-      // transports: ["internal"]
+      transports: ["internal"]
     }],
     // rpId: rp === undefined ? null : rp.id,
     challenge: new Uint8Array([
