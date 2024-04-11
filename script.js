@@ -10,7 +10,7 @@ function createCredentials(rp) {
     ]),
     rp,
     user: {
-      // id: new Uint8Array(16),
+      id: new Uint8Array(16),
       id: userId,
       name: "canand@example.com",
       displayName: "Carina Anand",
@@ -54,7 +54,7 @@ function getCredentials(rp) {
       type: "public-key",
       transports: ["internal"]
     }],
-    // rpId: rp === undefined ? null : rp.id,
+    rpId: rp === undefined ? null : rp.id,
     challenge: new Uint8Array([
       // must be a cryptographically random number sent from a server
       0x79, 0x50, 0x68, 0x71, 0xda, 0xee, 0xee, 0xb9, 0x94, 0xc3, 0xc2, 0x15,
