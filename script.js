@@ -51,7 +51,7 @@ function getCredentials(rp) {
   const requestCredentialOptions = {
     allowCredentials: [{
       id: userId,
-      type: "public-key"
+      type: "public-key",
       transports: ["internal"]
     }],
     // rpId: rp === undefined ? null : rp.id,
