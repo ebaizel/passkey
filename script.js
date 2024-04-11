@@ -88,7 +88,7 @@ document
   .addEventListener("click", function () {
     getCredentials({
       name: "Example CORP",
-      id: "XXebaizel.github.io",
+      id: "ebaizel.github.io",
     })
   });
 document
